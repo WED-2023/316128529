@@ -1,7 +1,134 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+
+body {
+    background-image: url('images/backround.jpg');
+    /* background-color: #070727; */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    padding-top: 60px; /* Adjust top padding to accommodate fixed toolbar */
+}
+
+.toolbar {
+    background-color: #1c6e95;
+    padding: 10px 15px; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 30px); /* Adjusted width */
+    z-index: 1000; 
+}
+
+.toolbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar li {
+    margin-right: 20px;
+}
+
+.toolbar li:last-child {
+    margin-right: 0;
+}
+
+.toolbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block; /* Make the link an inline-block element */
+
+}
+
+.section {
+    height: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section h2, h3, h4 {
+    margin-top: 100px;
+}
+
+
+/* CSS for table without borders */
+table.withoutborder, table.text {
+    width: 100%; /* Set table width to 100% of its container */
+    margin: 0 auto;
+
+}
+iframe {
+    color: white !important;
+    font-size: 20px !important;
+}
+
+table.withoutborder td table.withoutborder th {
+    padding: 8px; /* Add padding for cells */
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+
+  }
+  
+  
+  #customers td, #customers th {
+    border: 1px solid #000000;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #0b384d;}
+  #customers tr:nth-child(odd){background-color: #093144;}
+
+  #customers tr:hover {background-color: #394cda;}
+  #customers td:hover {
+    background-color:  #394cda;
+  }
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: rgb(245, 243, 243);
+  }
+  td {
+    transition: background-color 0.3s;
+  }
+  
+  table.withoutborder td:hover{
+    background-color: lightgray; /* Change to desired color */
+    
+  }
+  table.like{
+    background-color: rgb(9, 181, 200); /* Change to desired color */
+    
+  }
+  table.text td:hover {
+    background-color: rgb(69, 118, 224); /* Change to desired color */
+  }
+    .toolbar ul li a:hover {
+      transform: scale(1.2); /* Scale the link to 120% of its original size */
+
+  }
+.contact-inputs{
+  padding-left: 25px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+button{
+  border-radius: 20px;
+  height: 40px;
+  width: 80px;
+  border: none;
+  color: #fff;
+  background-color: #0dc5c8;
 }
