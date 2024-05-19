@@ -132,3 +132,15 @@ button{
   color: #fff;
   background-color: #0dc5c8;
 }
+
+.emoji {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+.emoji-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Center emojis horizontally */
+}
